@@ -1,0 +1,177 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="mobile">
+        <div class="a">
+          <div class="line"></div>
+          <div class="dot"></div>
+        </div>
+
+        <div class="notification">
+          <div class="time">
+            <p id="hour"></p>
+          </div>
+          <div class="icons">
+            <i class="fa fa-signal" aria-hidden="true"></i>
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div id="keypad">
+          <div class="display1">
+            <div class="input">
+              <input
+                type="text"
+                readonly
+                name="txt"
+                id="value"
+                maxlength="10"
+              />
+              <p id="error"></p>
+            </div>
+            <div class="buttons">
+              <div class="row">
+                <button id="but" onclick="show('1')">1</button>
+                <button id="but" onclick="show('2')">
+                  2
+                  <p>ABC</p>
+                </button>
+                <button id="but" onclick="show('3')">
+                  3
+                  <p>DEF</p>
+                </button>
+              </div>
+
+              <div class="row">
+                <button id="but" onclick="show('4')">
+                  4
+                  <p>GHI</p>
+                </button>
+
+                <button id="but" onclick="show('5')">
+                  5
+                  <p>JKL</p>
+                </button>
+                <button id="but" onclick="show('6')">
+                  6
+                  <p>MNO</p>
+                </button>
+              </div>
+
+              <div class="row">
+                <button id="but" onclick="show('7')">
+                  7
+                  <p>PQRS</p>
+                </button>
+                <button id="but" onclick="show('8')">
+                  8
+                  <p>TUV</p>
+                </button>
+                <button id="but" onclick="show('9')">
+                  9
+                  <p>WXYZ</p>
+                </button>
+              </div>
+
+              <div class="row">
+                <button id="but" onclick="show('*')">*</button>
+                <button id="but" onclick="show('0')">
+                  0
+                  <p>*</p>
+                </button>
+                <button id="but" onclick="show('#')">#</button>
+              </div>
+
+              <div class="row">
+                <button id="call" onclick="call()">
+                  <i class="fa fa-phone fa-lg"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="nav">
+            <nav>
+              <div>
+                <i class="fa fa-star fa-lg"></i>
+                <p>Favouriate</p>
+              </div>
+
+              <div>
+                <i class="fa fa-clock-o fa-lg"></i>
+                <p>Recieved</p>
+              </div>
+
+              <div>
+                <i class="fa fa-user-circle-o fa-lg"></i>
+                <p>Contacts</p>
+              </div>
+
+              <div>
+                <i class="fa fa-keyboard-o fa-lg"></i>
+                <p>Keypad</p>
+              </div>
+            </nav>
+          </div>
+
+          <div class="line2"></div>
+        </div>
+
+        <div class="v" id="callscr">
+          <h1 id="phone">rgrg</h1>
+          <p class="calling">Calling...</p>
+          <div class="iconss">
+            <div class="row">
+              <div>
+                <button><i class="fa fa-microphone-slash fa-lg"></i></button>
+                <p>un-mute</p>
+              </div>
+
+              <div>
+                <button><i class="fa fa-keyboard-o fa-lg"></i></button>
+                <p>keypad</p>
+              </div>
+
+              <div>
+                <button><i class="fa fa-volume-up fa-lg"></i></button>
+                <p>speaker</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div>
+                <button><i class="fa fa-plus fa-lg"></i></button>
+                <p>add call</p>
+              </div>
+
+              <div>
+                <button>
+                  <i class="fa fa-video-camera" aria-hidden="true"></i>
+                </button>
+                <p>face time</p>
+              </div>
+
+              <div>
+                <button><i class="fa fa-user fa-lg"></i></button>
+                <p>contacts</p>
+              </div>
+            </div>
+          </div>
+          <button id="cancel" onclick="cancel()">
+            <i class="fa fa-phone fa-lg"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
